@@ -1,5 +1,6 @@
 export SHARED="/home/shared"
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':'):$(du "$SHARED/scripts" | cut -f2 | paste -sd ':')"
+export COLORTERM="truecolor"
 
 export EDITOR="nvim"
 export TERMINAL="alacritty"
@@ -16,6 +17,8 @@ export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/.npm"
 
 export INPUTRC="$XDG_CONFIG_HOME/inputrc"
 export CONDARC="$XDG_CONFIG_HOME/conda/condarc"
+
+export _Z_DATA="$XDG_DATA_HOME/.z"
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$ZDOTDIR/.zsh_history"
