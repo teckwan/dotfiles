@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('$XDG_DATA_HOME/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()} }
