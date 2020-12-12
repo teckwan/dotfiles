@@ -7,7 +7,7 @@ setopt auto_cd
 export ZSH="$SHARED/plugins/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZLE_RPROMPT_INDENT=0
-plugins=(git z)
+plugins=(git z vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 [ -f "$XDG_CONFIG_HOME/zsh/.p10k.zsh" ] && source ~/.config/zsh/.p10k.zsh
