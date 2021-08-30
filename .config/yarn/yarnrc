@@ -1,0 +1,3 @@
+cacheFolder: ${XDG_CACHE_HOME}/yarn
+globalFolder: ${XDG_DATA_HOME}/yarn
+

@@ -1,31 +1,18 @@
-export SHARED="/home/shared"
+export EDITOR="nvim"
+export TERM="xterm-256color"
+export WORKSPACE_ROOT="$HOME/code"
 
-export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')"
-
+export XDG_BIN_DIR="$HOME/.local/bin"
+export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_RUNTIME_DIR="/tmp"
 
-# node path configuration (nodenv + npm)
-export PATH="$HOME/.nodenv/bin:$PATH"
-export PATH="$XDG_DATA_HOME/npm/bin:$PATH"
+export PATH="$PATH:$XDG_BIN_DIR"
 
-export COLORTERM="truecolor"
-
-export EDITOR="nvim"
-export TERMINAL="alacritty"
-export BROWSER="firefox"
-
-export INPUTRC="$XDG_CONFIG_HOME/inputrc"
-export ALIASRC="$XDG_CONFIG_HOME/aliasrc"
-
+export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$ZDOTDIR/.zsh_history"
 
-export _Z_DATA="$XDG_DATA_HOME/.z"
-
-# To keep home directory clean
-export __GL_SHADER_DISK_CACHE_PATH="$XDG_CACHE_HOME/.nv"
-
+export NODENV_ROOT="$XDG_DATA_HOME/nodenv"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
-export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/.npm"
