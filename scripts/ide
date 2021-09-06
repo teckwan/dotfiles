@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+tmux has-session -t ide
+if [[ $? -ne 0 ]]; then
+	tmux new-session -s ide -d
+	tmux split-window -t ide -v -p 25
+	tmux split-window -t ide -h -p 67
+	tmux split-window -t ide -h -p 50
+	tmux select-pane -t ide:1.1
+	tmux send-keys -t ide "v" C-m
+fi
+
+tmux attach -t ide
