@@ -11,6 +11,7 @@ return require("packer").startup {
 		use { "hrsh7th/nvim-cmp", requires = { "hrsh7th/cmp-nvim-lsp", "saadparwaiz1/cmp_luasnip", "L3MON4D3/LuaSnip" } }
 		use "kyazdani42/nvim-web-devicons"
 		use "kyazdani42/nvim-tree.lua"
+		use { "lewis6991/gitsigns.nvim", requires = { "nvim-lua/plenary.nvim" } }
 		use "neovim/nvim-lspconfig"
 		use { "nvim-telescope/telescope.nvim", requires = { "nvim-lua/plenary.nvim" } }
 		use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }

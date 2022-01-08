@@ -1,6 +1,10 @@
 #!/bin/zsh
 
 alias ls="LC_ALL=C.UTF-8 ls -hN --color=auto --group-directories-first"
-alias v="$EDITOR"
 alias tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
-alias yarn="yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/yarnrc"
+alias v="$EDITOR"
+
+# Arch-specific aliases
+if [ -f "/etc/arch-release" ]; then
+	alias p="sudo pacman"
+fi
