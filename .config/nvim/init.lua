@@ -1,4 +1,5 @@
-vim.g.mapleader = ","
-
-require "core"
-require "lsp"
+require "dabeliuteew.options"
+require "dabeliuteew.lsp"
+require "dabeliuteew.mappings"
+require "dabeliuteew.packer"
+require "dabeliuteew.statusline"

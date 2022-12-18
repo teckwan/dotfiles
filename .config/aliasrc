@@ -1,8 +1,16 @@
 #!/bin/zsh
 
+alias be="bundle exec"
+
+alias dotf="GIT_WORK_TREE=$HOME GIT_DIR=$HOME/.dotfiles"
+
 alias ls="LC_ALL=C.UTF-8 ls -hN --color=auto --group-directories-first"
+
 alias tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
+
 alias v="$EDITOR"
+
+alias yarn="yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/yarnrc"
 
 # Arch-specific aliases
 if [ -f "/etc/arch-release" ]; then
